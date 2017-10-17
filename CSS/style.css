@@ -1,0 +1,532 @@
+/* GENERAL STYLES */
+
+* {
+	list-style: none;
+}
+
+a:link, a:visited, a:hover, a:active, a:focus {
+    list-style: none;
+    text-decoration: none;
+    outline: none;   
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+}
+
+.wrapper {
+	width: 100%;
+}
+
+.row {
+	margin: auto;
+}
+
+.sect-title {
+	padding: 80px 0px 25px 0;
+	font-size: 34px;
+	color: goldenrod;
+	text-align: center;
+	text-shadow: 1.5px 1px #420039;
+    margin-bottom: 35px;
+}
+
+.para-desc {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	padding-top: 5px;
+	line-height: 1.7;
+	width: 80%;
+	margin: auto;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+/***********************************************/
+/***        		MAIN HEADER  	  		 ***/
+/**********************************************/
+
+.mobile {
+	  display: none;
+      position: fixed;
+      width: 100%;
+      top: 0;
+}
+
+.mobile div {
+	 display: none;
+}
+   
+.mobile button {
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    border: 0;
+    text-indent: 200%;
+    overflow: hidden;
+    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-size: 80%;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    transition: all 400ms ease;
+}
+    
+.nav-button.expanded {
+      transform: rotate(90deg);
+      background-color: transparent;
+      border: 0;
+}
+
+.nav-button a {
+	 display: block;
+}
+
+.mobile a, .desktop a {
+	background: #e5c100;
+  	text-align: center;
+  	padding: 20px 0px;
+  	border-bottom: 1px solid #ddd;
+  	text-decoration: none;
+  	color: #f6f2ff;
+  	font-weight: bold;
+}
+ 
+.mobile a:hover, .desktop a:hover {
+	background: #fff;
+	color: goldenrod;
+}
+   
+.desktop {
+    display: block;
+    overflow: hidden;
+}
+  
+.desktop  a {
+    width: 20%;
+    float: left;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+article {padding: 0 30px 15px;}
+
+.center-header {
+    font-size: 18px;
+    font-style: italic;
+}
+
+@media (max-width: 800px){
+	.mobile { 
+		display: block;
+		width: 100%;
+	}
+	
+	.mobile a { 
+		display: block;
+		width: 100%;
+	}
+
+    .desktop {
+		 display: none;
+	}
+}
+  
+   
+/************************************/
+/*				HOME PAGE			*/
+/************************************/
+
+#main-page {
+	height: 950px; 
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url(../IMAGES/back10.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: cover;
+	color: #fff;
+	margin-top: -120px;
+	clear: both;
+}
+
+#main-page h1  {
+	font-family: 'Cabin Sketch', cursive;
+	padding-top: 45px;
+	font-size: 34px;
+	text-align: center;
+}
+
+#main-page h3 {
+	font-family: 'Cabin Sketch', cursive;
+	font-size: 22px;
+	text-align: center;
+	padding-top: 25px;
+	padding-bottom: 45px;
+    left: 0;
+    right: 0;
+}
+
+.text-contour {
+	position: absolute;
+	top: 40%;
+	left: 0; 
+	right: 0;
+	text-align: center;
+	border: 2px #fff solid;
+	background: rgba(0, 0, 0, 0.2);
+    max-width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 800px){
+	#main-page { height: 850px; }
+	
+	#main-page h1  {
+		padding-top: 27px;
+        font-size: 42px;
+        text-align: center;
+}
+
+	#main-page h3 {
+        padding-top: 25px;
+        padding-bottom: 45px;
+        left: 0;
+        right: 0;
+        font-size: 28px;
+        text-align: center;
+    }
+	
+	.text-contour {
+        position: absolute;
+        top: 35%;
+        left: 0; 
+        right: 0;
+        text-align: center;
+        border: 2px #fff solid;
+        background: rgba(0, 0, 0, 0.2);
+		max-width: 920px;
+		margin-left: auto;
+		margin-right: auto;
+    }	
+}
+
+
+/************************************/
+/*				ABOUT PAGE				*/
+/************************************/
+
+#about-page {
+	height: auto;
+	clear: both;
+}
+
+.text-container {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 80px;
+}
+
+.img-container {
+    width: 100%;
+    display: inline-block;
+    height: 450px;
+    background-image: url(../IMAGES/back13.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#about-page p {
+	text-align: center;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 20px;
+	padding-top: 5px;
+	line-height: 1.7;
+	width: 80%;
+	margin: auto;
+}
+
+@media (min-width: 750px){
+    #about-page {height: 450px;}
+    
+    .text-container {
+        width: 50%;
+        display: inline-block;
+        float: left;
+}
+
+.img-container {
+        width: 50%;
+        display: inline-block;
+        float: right;
+    }
+}
+
+
+/************************************/
+/*				SKILLS PAGE				*/
+/************************************/
+
+.fa {
+    margin-bottom: 20px;
+}
+
+#skills-page {
+	height: 700px;
+	clear: both;
+}
+
+#skills-page .col { 
+	background: #ccc; 
+	background: #eee; 
+	padding:1em 0; 
+	text-align:center;
+}
+
+#skills-page  .span_1_of_3 {
+	width: 32.26%; 
+}
+
+#skills-page p {
+	margin-bottom: 13px;
+}
+
+@media only screen and (max-width: 480px) {
+	#skills-page .span_1_of_3 {
+		width: 100%; 
+	}
+}
+
+@media only screen  and (min-width: 481px) and (max-width: 600px) {
+	#skills-page .span_1_of_3 {
+		font-size: 14px;
+		font-weight: bold;
+	}
+}
+
+@media only screen  and (min-width: 481px) {
+	#skills-page {
+        height: 500px;
+        clear: both;
+	}
+}
+
+
+/************************************/
+/*			PORTFOLIO PAGE			*/
+/************************************/
+
+#portfolio-page {
+	height: auto;
+	clear: both;
+}
+
+#portfolio-page p {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+#portfolio-page .span_1_of_3 {
+	width: 32%;
+}
+
+@media only screen and (min-width: 220px) and (max-width: 480px) {
+	#portfolio-page .span_1_of_3 {
+		width: 100%; 
+	}
+}
+
+.work {
+	padding: 60px 100px;
+	text-align: center;
+}
+
+.work .box {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	margin: 20px;
+	overflow: hidden;	
+}
+
+#box1 {
+	background: url(../IMAGES/MyFinishedProject_files/tastyCook.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+
+#box2 {
+	background: url(../IMAGES/MyFinishedProject_files/lovelyEntourage.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box3 {
+	background: url(../IMAGES/MyFinishedProject_files/trainingU.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box4 {
+	background: url(../IMAGES/MyFinishedProject_files/HRconsultancy.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box5 {
+	background: url(../IMAGES/MyFinishedProject_files/cr%C3%A9astudio.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box6 {
+	background: url(../IMAGES/MyFinishedProject_files/ALF.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box7 {
+	background: url(../IMAGES/MyFinishedProject_files/myPortfolio.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box8 {
+	background: url(../IMAGES/MyFinishedProject_files/tipCalcutator.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box9 {
+	background: url(../IMAGES/MyFinishedProject_files/todoList.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box10 {
+	background: url(../IMAGES/MyFinishedProject_files/memoryGameWon.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box11 {
+	background: url(../IMAGES/MyFinishedProject_files/tictactoe.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+
+.mix-target a {
+    color: goldenrod;
+    font-weight: bold;
+}
+
+.filter-btn {
+    background-color: goldenrod;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;  
+}
+
+.filter-btn:active {
+    background-color: #fff;
+    color: goldenrod;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #8290af;
+}
+
+.box:hover .overlay {
+   opacity: .95;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+@media only screen and (max-width: 540px) {
+	.work {
+        padding: 20px 15px;
+        text-align: center;
+	}
+    
+    .overlay {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        background-color: #8290af;
+    }
+}
+
+
+/**********						**********/
+/*			PORTFOLIO MIXITUP			*/
+
+.programs button.programs-filter-btn-active,
+.programs button.programs-sort-btn-active {
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5) inset, 0px 0px 1px transparent;
+   background: #3a9fbf;
+   color: white;
+}
+
+.filter-btn {
+	padding: 20px 0px;
+    text-align: center;	
+    width: 140px;
+    height: 60px;
+}
+
+.filter-btn:nth-child(2) {
+   top: 0px;
+}
+
+.container.filter-btn {
+	margin: 0 auto;
+}
+
+.categories {
+    text-align: center;
+}
+
+/************************************/
+/*			CONTACT PAGE			*/
+/************************************/
+
+
+#contact-page {
+	height: auto;
+	clear: both;
+	padding: 20px 15px;
+    width: 100%;
+}
+
+.logo-size {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+}
+
+#map {
+	width: 100%; 
+	height: 400px;	
+}
+
+.contact-info {
+    text-align: center;
+    padding-top: 55px;
+}
+.social-icon li {
+    display: inline-block;
+    margin-left: 15px;
+}
+.myInfo div, .myInfo h2 {
+    margin-bottom: 15px;
+    font-size: 23px;
+    color: #333;
+}
