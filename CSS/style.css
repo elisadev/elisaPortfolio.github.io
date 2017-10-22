@@ -400,17 +400,32 @@ article {padding: 0 30px 15px;}
 	background-repeat: no-repeat;	
 }
 #box9 {
-	background: url(../IMAGES/MyFinishedProject_files/todoList.PNG);
+	background: url(../IMAGES/MyFinishedProject_files/todo.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;	
 }
 #box10 {
-	background: url(../IMAGES/MyFinishedProject_files/memoryGameWon.PNG);
+	background: url(../IMAGES/MyFinishedProject_files/budgetApp.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;	
 }
 #box11 {
+	background: url(../IMAGES/MyFinishedProject_files/rsvpApp.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box12 {
+	background: url(../IMAGES/MyFinishedProject_files/memoryGameWon.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box13 {
 	background: url(../IMAGES/MyFinishedProject_files/tictactoe.PNG);
+	background-size: cover;
+	background-repeat: no-repeat;	
+}
+#box14 {
+	background: url(../IMAGES/MyFinishedProject_files/pigGame.PNG);
 	background-size: cover;
 	background-repeat: no-repeat;	
 }
